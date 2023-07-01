@@ -78,6 +78,14 @@ An initial prompt to engage Chat Gpt. The role has to be user with conditions:
         "Let's start fresh. We need to clear your chat entirely. I'm working on creating a dataset based on faulty code. Specifically, I'm interested in runtime errors known as Linker Errors. Your task is to provide me with various examples of this type of error, written in .cpp format. To ensure a clean dataset for the machine learning model, we need a diverse range of examples that are clear and complete in terms of code structure. When I say 'next,' please provide me with an example code that triggers the Linker error, without any additional information. I dont need comments in the code. It's crucial to avoid duplicating any code you've already provided. Please only give me the code examples and refrain from offering explanations about the code – this is important. If you understand the instructions, please respond with a simple 'yes,' without any additional text."
 
 </h3>
+
+<h3><strong>Run</strong></h3>
+<h3>
+To run the code; simply be in GPT directory and:
+
+    node index.js
+
+</h3>
 <h1></h1>
 
 <h2><u>Constraints</u></h2>
@@ -86,11 +94,20 @@ An initial prompt to engage Chat Gpt. The role has to be user with conditions:
 
 * Might generate wrong codes.
 * Might generate duplicates.
-* Might fail. If thats the case; please empty chat_messages.json and reprompt. Please make sure to include these after the prompt
+* Might fail. If thats the case; please empty chat_messages.json and reprompt. Follow the same syntax:
 
         [
         {"role":"user","content":"Your Prompt"},
         {"role":"assistant","content":"Yes."},
         {"role":"user","content":"Next"}
         ]
+</h3>
+
+<h1></h1>
+
+<h2><u>Assumptions</u></h2>
+
+<h3>
+
+* User has enough credits for API Fetch.
 </h3>
