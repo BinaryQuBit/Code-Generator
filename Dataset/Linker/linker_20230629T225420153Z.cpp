@@ -1,12 +1,9 @@
+// main.cpp
 #include <iostream>
 
-class MyClass {
-public:
-    void displayMessage();
-};
+int globalVar = 10; // Definition of global variable
 
 int main() {
-    MyClass obj;
-    obj.displayMessage();
+    std::cout << globalVar << std::endl; // Using the global variable
     return 0;
 }

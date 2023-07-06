@@ -1,8 +1,17 @@
-#include <iostream>
+class MyClass {
+  friend MyClass operator+(const MyClass&, const MyClass&);
+};
 
-extern int x;
+MyClass operator+(const MyClass& obj1, const MyClass& obj2) {
+  return MyClass();
+}
+
+MyClass operator+(const MyClass& obj1, const MyClass& obj2) {
+  return MyClass();
+}
 
 int main() {
-    std::cout << x << std::endl;
-    return 0;
+  MyClass obj1, obj2;
+  MyClass result = obj1 + obj2;
+  return 0;
 }

@@ -1,8 +1,12 @@
 #include <iostream>
 
-void printMessage();
+class MyClass {
+public:
+    void operator()() { std::cout << "Function call operator" << std::endl; }
+};
 
 int main() {
-    printMessage();
+    MyClass obj;
+    obj();  // Error: Missing function call operator overload
     return 0;
 }

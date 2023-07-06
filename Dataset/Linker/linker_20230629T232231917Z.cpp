@@ -1,12 +1,9 @@
 #include <iostream>
 
-class MyClass {
-public:
-    void displayMessage();
-};
+#define MAX_VALUE 100
+#define MAX_VALUE 200  // Error: Conflicting macro definitions
 
 int main() {
-    MyClass obj;
-    obj.displayMessage();
+    std::cout << MAX_VALUE << std::endl;
     return 0;
 }

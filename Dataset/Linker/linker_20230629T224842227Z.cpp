@@ -1,7 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    ~MyClass() {} // Destructor definition 1
+    ~MyClass() {} // Destructor definition 2
+};
 
 int main() {
-    int x = 10;
-    double* ptr = &x;
+    MyClass obj;
     return 0;
 }

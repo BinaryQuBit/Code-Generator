@@ -1,8 +1,8 @@
-#include <iostream>
+// File 1.cpp
+void add(int a, int b);  // Declaration
 
-void printMessage();
-
-int main() {
-    printMessage();
-    return 0;
+// File 2.cpp
+void add(int a, float b)  // Definition with mismatched parameter type
+{
+    // implementation
 }

@@ -1,6 +1,10 @@
-#include <iostream>
+// File.cpp
+template <typename T>
+struct MyClass {
+    static void myFunction();
+};
 
 int main() {
-    std::cout << x << std::endl;
+    typename MyClass<int>::MySubClass obj;
     return 0;
 }

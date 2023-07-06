@@ -1,8 +1,17 @@
-#include <iostream>
+class MyClass {
+public:
+    friend class FriendClass;
+    friend class FriendClass;  // Second definition
+};
 
-void printMessage();
+class FriendClass {
+public:
+    void foo() {}
+};
 
 int main() {
-    printMessage();
+    MyClass obj;
+    FriendClass friendObj;
+    friendObj.foo();  // Accessing friend function
     return 0;
 }

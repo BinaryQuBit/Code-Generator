@@ -1,8 +1,15 @@
-#include <iostream>
+// File 1.cpp
+extern void functionB();  // Declaration of functionB
 
-extern int x;
+void functionA()
+{
+    functionB();
+}
 
-int main() {
-    std::cout << x << std::endl;
-    return 0;
+// File 2.cpp
+extern void functionA();  // Declaration of functionA
+
+void functionB()
+{
+    functionA();
 }

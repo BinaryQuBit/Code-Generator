@@ -1,8 +1,11 @@
+// undefined_class.cpp
 #include <iostream>
 
-void displayMessage();
+// Declaration of class
+class UndefinedClass;
 
 int main() {
-    displayMessage();
+    // Use of undefined class
+    UndefinedClass undefinedObject;
     return 0;
 }

@@ -1,8 +1,12 @@
-#include <iostream>
+class MyFriendClass {
+  // Definition of friend class
+};
 
-void printMessage();
+class MyClass {
+  friend MyFriendClass;  // Incorrect declaration of friend class (missing "class" keyword)
+};
 
 int main() {
-    printMessage();
-    return 0;
+  MyFriendClass obj;
+  return 0;
 }

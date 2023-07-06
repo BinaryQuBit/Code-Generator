@@ -1,8 +1,22 @@
+// main.cpp
 #include <iostream>
 
-void printMessage();
+class Base {
+public:
+    void foo() {
+        std::cout << "Base::foo()" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    virtual void foo() {
+        std::cout << "Derived::foo()" << std::endl;
+    }
+};
 
 int main() {
-    printMessage();
+    Derived d;
+    d.foo();
     return 0;
 }

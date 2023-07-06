@@ -1,9 +1,15 @@
 #include <iostream>
 
+class Base {
+public:
+    virtual void foo() {}
+};
+
+class Derived : public virtual Base {};
+
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    Derived derivedObj;
+    Base* basePtr = &derivedObj;
+    basePtr->foo();  // Error: Ambiguous function call due to incorrect use of virtual inheritance
     return 0;
 }

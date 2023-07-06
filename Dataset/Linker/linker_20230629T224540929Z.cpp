@@ -1,9 +1,9 @@
-#include <iostream>
+class MyClass {
+  friend MyClass operator+(const MyClass&, const MyClass&);
+};
 
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
-    return 0;
+  MyClass obj1, obj2;
+  MyClass result = obj1 + obj2;
+  return 0;
 }

@@ -1,8 +1,9 @@
+// main.cpp
 #include <iostream>
 
-int multiply(int a, int b);
+extern int globalVar; // Declaration without definition
 
 int main() {
-    int result = multiply(2, 3);
+    std::cout << globalVar << std::endl; // Using the undefined global variable
     return 0;
 }

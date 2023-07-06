@@ -1,9 +1,7 @@
-#include <iostream>
+// File: main.cpp
+extern "C" void myFunction();  // Expected C-style name mangling
 
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    myFunction();  // Linker error: unresolved external symbol "void __cdecl myFunction(void)"
     return 0;
 }

@@ -1,8 +1,14 @@
-#include <iostream>
+class MyFriendClass {
+};
+
+class MyClass {
+  friend class MyFriendClass;
+};
+
+class MyFriendClass {  // Another definition of MyFriendClass
+};
 
 int main() {
-    int* arr = new int[5];
-    delete[] arr;
-    delete[] arr;
-    return 0;
+  MyFriendClass obj;
+  return 0;
 }

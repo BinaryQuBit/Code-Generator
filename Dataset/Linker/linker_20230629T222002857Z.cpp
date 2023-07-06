@@ -1,8 +1,11 @@
+// undefined_variable.cpp
 #include <iostream>
 
-int add(int a, int b);
+// Declaration of variable
+extern int undefinedVariable;
 
 int main() {
-    int result = add(3, 5);
+    // Use of undefined variable
+    std::cout << undefinedVariable << std::endl;
     return 0;
 }

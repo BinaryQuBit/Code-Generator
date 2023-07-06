@@ -1,12 +1,10 @@
-#include <iostream>
-
 class MyClass {
 public:
-    void displayMessage();
+    operator int(); // Conversion operator declaration only
 };
 
 int main() {
     MyClass obj;
-    obj.displayMessage();
+    int value = obj; // Using conversion operator without definition
     return 0;
 }

@@ -1,9 +1,9 @@
-#include <iostream>
+// File 1.cpp
+extern int sharedVariable;  // Declaration
 
-int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+// File 2.cpp
+int main()
+{
+    sharedVariable = 10;  // Use of sharedVariable without definition
     return 0;
 }

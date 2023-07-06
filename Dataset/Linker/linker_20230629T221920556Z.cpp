@@ -1,6 +1,12 @@
+// undefined_function.cpp
 #include <iostream>
 
+// Declaration of function
+void undefinedFunction();
+
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    // Call to undefined function
+    undefinedFunction();
     return 0;
 }
+

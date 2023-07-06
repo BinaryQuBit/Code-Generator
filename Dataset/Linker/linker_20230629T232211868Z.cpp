@@ -1,8 +1,8 @@
 #include <iostream>
 
-int multiply(int a, int b);
+extern void someFunction();  // Declaration without definition
 
 int main() {
-    int result = multiply(2, 3);
+    someFunction();  // Error: Linker cannot find the definition
     return 0;
 }

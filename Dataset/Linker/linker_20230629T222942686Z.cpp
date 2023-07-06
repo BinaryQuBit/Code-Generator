@@ -1,7 +1,5 @@
-#include <iostream>
-
+// File: main.cpp
 int main() {
-    int x;
-    std::cout << x << std::endl;
     return 0;
 }
+

@@ -1,6 +1,12 @@
+// main.cpp
 #include <iostream>
 
+class MyClass {
+public:
+    static void staticFunc(); // Declaration without definition
+};
+
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    MyClass::staticFunc(); // Using the undefined static member function
     return 0;
 }

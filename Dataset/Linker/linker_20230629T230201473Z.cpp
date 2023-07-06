@@ -1,7 +1,11 @@
-#include <iostream>
+class MyClass {
+public:
+    MyClass(int) {}       // Conversion constructor
+    MyClass(float) {}     // Second conversion constructor
+};
 
 int main() {
-    int x;
-    std::cout << x << std::endl;
+    MyClass obj = 42;     // Ambiguity between the conversion constructors
     return 0;
 }
+

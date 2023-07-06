@@ -1,8 +1,11 @@
-#include <iostream>
+// File: main.cpp
+void myFunction(int x);
 
-extern int x;
+void myFunction(int x) {
+    // Function definition
+}
 
 int main() {
-    std::cout << x << std::endl;
+    myFunction(5);  // Compilation error: redefinition of 'void myFunction(int)'
     return 0;
 }

@@ -16,7 +16,7 @@ async function runChatBot() {
       const messages = JSON.parse(messagesData);
 
       const completion = await openai.createChatCompletion({
-        model: '', // Your Model here
+        model: 'gpt-3.5-turbo', // Your Model here
         messages: messages,
       });
 

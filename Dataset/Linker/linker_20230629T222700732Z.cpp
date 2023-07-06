@@ -1,8 +1,10 @@
 #include <iostream>
 
+inline int add(int a, int b); // Declaration of inline function
+
 int main() {
-    int* arr = new int[5];
-    delete[] arr;
-    delete[] arr;
+    int result = add(5, 3); // Calling the inline function
+    std::cout << result << std::endl;
     return 0;
 }
+

@@ -1,7 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    void nonVirtualFunction();  // Non-virtual member function declaration
+};
 
 int main() {
-    int x = 10;
-    double* ptr = &x;
+    MyClass obj;
+    obj.nonVirtualFunction();  // Attempting to call the non-virtual function
     return 0;
 }

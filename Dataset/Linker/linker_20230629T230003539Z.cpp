@@ -1,8 +1,13 @@
-#include <iostream>
+// File.cpp
+class MyClass {
+    friend void myFriendFunction();
+};
 
-extern int x;
+void myFriendFunction() {}
+
+void myFriendFunction() {}
 
 int main() {
-    std::cout << x << std::endl;
+    MyClass obj;
     return 0;
 }

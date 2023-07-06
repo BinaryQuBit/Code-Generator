@@ -1,10 +1,19 @@
+// Linker error due to missing library
+
+// In this code, we use a function from the math library without linking against it,
+// resulting in a linker error due to unresolved symbols.
+
+// Compiler will compile this code successfully, but linker will throw an error.
+
 #include <iostream>
+#include <cmath>
 
-const int MAX_SIZE = 10;
+int main()
+{
+    double result = sqrt(25.0); // Using sqrt() function from the math library
+    std::cout << "Square root: " << result << std::endl;
 
-int main() {
-    int arr[MAX_SIZE];
-    arr[10] = 5;
     return 0;
 }
+
 

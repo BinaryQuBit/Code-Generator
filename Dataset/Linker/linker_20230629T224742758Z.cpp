@@ -1,7 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    MyClass(); // Constructor declaration only
+};
 
 int main() {
-    int* ptr = nullptr;
-    *ptr = 10;
+    MyClass obj; // Using constructor without definition
     return 0;
 }
+

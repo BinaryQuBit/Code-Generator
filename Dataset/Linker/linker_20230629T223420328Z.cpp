@@ -1,8 +1,8 @@
-#include <iostream>
+// File: main.cpp
+extern void myFunction();  // Declaration without import/export attribute
 
 int main() {
-    int* ptr = new int;
-    delete ptr;
-    delete ptr;
+    myFunction();  // Linker error: unresolved external symbol myFunction
     return 0;
 }
+

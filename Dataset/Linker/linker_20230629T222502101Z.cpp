@@ -1,7 +1,7 @@
-#include <iostream>
+#include "ExampleA.h"
 
-int main() {
-    int x;
-    std::cout << x << std::endl;
-    return 0;
-}
+class ExampleB {
+public:
+    ExampleA a; // Dependency on ExampleA
+};
+

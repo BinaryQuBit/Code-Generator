@@ -1,7 +1,8 @@
+// File: main.cpp
 #include <iostream>
 
 int main() {
-    int x = 10;
-    double* ptr = &x;
+    printf("Hello, World!\n");  // Linking against a different version of C runtime may cause a linker error
     return 0;
 }
+

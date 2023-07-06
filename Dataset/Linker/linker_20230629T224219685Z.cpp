@@ -1,6 +1,19 @@
-#include <iostream>
+// MyClassA.h
+#pragma once
+#include "MyClassB.h"
 
-int main() {
-    std::cout << "Hello, world!" << std::endl;
-    return 0;
-}
+class MyClassA {
+public:
+    MyClassB b;
+};
+
+// MyClassB.h
+#pragma once
+#include "MyClassA.h"
+
+class MyClassB {
+public:
+    MyClassA a;
+};
+// Error: Circular dependency between `MyClassA.h` and `MyClassB.h`
+

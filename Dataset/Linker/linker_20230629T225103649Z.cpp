@@ -1,8 +1,16 @@
+// main.cpp
 #include <iostream>
 
-void printMessage();
+__declspec(dllexport) void foo(); // Export the function
 
 int main() {
-    printMessage();
+    foo(); // Function call
     return 0;
+}
+
+// dll.cpp
+#include <iostream>
+
+void foo() {
+    std::cout << "Hello from the DLL!" << std::endl;
 }

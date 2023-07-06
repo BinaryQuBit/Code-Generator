@@ -1,7 +1,12 @@
-#include <iostream>
+#include "ExampleB.h"
+
+class ExampleA {
+public:
+    ExampleB b; // Dependency on ExampleB
+};
 
 int main() {
-    int* ptr = nullptr;
-    *ptr = 10;
+    ExampleA a;
     return 0;
 }
+

@@ -1,8 +1,10 @@
-#include <iostream>
+class MyClass {
+  friend void myFriendFunction(int);  // Declaration of friend function with int parameter
+};
 
-void printMessage();
+void myFriendFunction(double) {}  // Definition of friend function with double parameter
 
 int main() {
-    printMessage();
-    return 0;
+  myFriendFunction(10);
+  return 0;
 }

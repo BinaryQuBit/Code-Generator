@@ -1,8 +1,7 @@
+// File: main.cpp
 #include <iostream>
 
-void printMessage();
-
 int main() {
-    printMessage();
+    std::cout << "Hello, World!" << std::endl;  // Forgetting to link against the standard library may cause a linker error
     return 0;
 }

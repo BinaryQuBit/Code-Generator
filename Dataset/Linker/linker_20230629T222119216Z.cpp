@@ -1,8 +1,14 @@
+// incompatible_types_variable.cpp
 #include <iostream>
 
-int add(int a, int b);
+// Declaration of variable with incompatible types
+extern int incompatibleVariable;
 
 int main() {
-    int result = add(3, 5);
+    // Use of the variable with incompatible types
+    std::cout << incompatibleVariable << std::endl;
     return 0;
 }
+
+// Definition of the variable
+int incompatibleVariable = "Hello";

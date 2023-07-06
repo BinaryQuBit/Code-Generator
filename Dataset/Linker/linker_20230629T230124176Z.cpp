@@ -1,8 +1,16 @@
-#include <iostream>
+class MyClass {
+public:
+    friend class FriendClass;
+};
 
-void printMessage();
+class FriendClass {
+public:
+    void foo(float) {}  // Incompatible parameter type
+};
 
 int main() {
-    printMessage();
+    MyClass obj;
+    FriendClass friendObj;
+    friendObj.foo(42);  // Calling the friend function
     return 0;
 }

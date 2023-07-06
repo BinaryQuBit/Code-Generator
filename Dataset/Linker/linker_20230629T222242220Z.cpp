@@ -1,9 +1,15 @@
 #include <iostream>
 
+class Example {
+public:
+    static int count; // Declaration of static member variable
+};
+
+int Example::count = 0; // Definition of static member variable
+
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    Example e;
+    e.count = 5;
+    std::cout << e.count << std::endl;
     return 0;
 }

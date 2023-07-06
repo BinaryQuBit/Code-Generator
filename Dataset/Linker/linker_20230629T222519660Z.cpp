@@ -1,8 +1,9 @@
-#include <iostream>
+#pragma once
 
-int main() {
-    int* ptr = new int;
-    delete ptr;
-    delete ptr;
-    return 0;
-}
+class ExampleA; // Forward declaration
+
+class ExampleB {
+public:
+    ExampleA* aPtr;
+};
+

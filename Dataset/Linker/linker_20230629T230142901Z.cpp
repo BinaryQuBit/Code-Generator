@@ -1,7 +1,9 @@
-#include <iostream>
+class MyClass {
+public:
+    MyClass(int) {}  // Conversion constructor
+};
 
 int main() {
-    int* ptr = nullptr;
-    *ptr = 10;
+    MyClass obj = 42;  // Attempting to use the conversion constructor
     return 0;
 }

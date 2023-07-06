@@ -1,9 +1,11 @@
-#include <iostream>
+// File.cpp
+class MyClass {
+    friend void myFriendFunction();
+};
+
+void myFriendFunction() {}
 
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    MyClass obj;
     return 0;
 }

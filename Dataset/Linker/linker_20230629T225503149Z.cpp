@@ -1,9 +1,15 @@
+// main.cpp
 #include <iostream>
 
+void globalFunc() { // Definition of global function
+    std::cout << "Hello, global function!" << std::endl;
+}
+
+void globalFunc() { // Another definition of the global function
+    std::cout << "Hello again, global function!" << std::endl;
+}
+
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    globalFunc(); // Using the global function
     return 0;
 }

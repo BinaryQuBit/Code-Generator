@@ -1,8 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    ~MyClass(); // Destructor declaration only
+};
 
 int main() {
-    int* ptr = new int;
-    delete ptr;
-    delete ptr;
+    MyClass obj; // Using destructor without definition
     return 0;
 }
+

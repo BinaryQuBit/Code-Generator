@@ -1,12 +1,13 @@
-#include <iostream>
-
-class MyClass {
-public:
-    void displayMessage();
+// File.cpp
+template <typename T>
+struct MyClass {
+    static void myFunction();
 };
 
+template <>
+struct MyClass<int>;
+
 int main() {
-    MyClass obj;
-    obj.displayMessage();
+    MyClass<int>::myFunction();
     return 0;
 }

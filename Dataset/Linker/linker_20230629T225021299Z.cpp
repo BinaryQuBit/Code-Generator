@@ -1,9 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    operator int() { return 42; } // Conversion operator returning an integer
+};
 
 int main() {
-    int x = 10;
-    int* ptr = &x;
-    *ptr = 20;
-    std::cout << "Value of x: " << x << std::endl;
+    MyClass obj;
+    double value = obj; // Assigning conversion result to a double
     return 0;
 }

@@ -1,8 +1,11 @@
-#include <iostream>
+// File.cpp
+class MyClass {
+    friend class MyFriendClass;
+};
 
-void printMessage();
+class MyFriendClass {};
 
 int main() {
-    printMessage();
+    MyClass obj;
     return 0;
 }

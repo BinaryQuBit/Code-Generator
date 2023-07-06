@@ -1,12 +1,25 @@
+// multiple_definitions_class.cpp
 #include <iostream>
 
-class MyClass {
+// Definition of class
+class MultipleDefinitionsClass {
 public:
-    void displayMessage();
+    void printMessage() {
+        std::cout << "Hello, world!" << std::endl;
+    }
+};
+
+// Another definition of the same class
+class MultipleDefinitionsClass {
+public:
+    void printMessage() {
+        std::cout << "Greetings!" << std::endl;
+    }
 };
 
 int main() {
-    MyClass obj;
-    obj.displayMessage();
+    // Create an object of the class with multiple definitions
+    MultipleDefinitionsClass obj;
+    obj.printMessage();
     return 0;
 }

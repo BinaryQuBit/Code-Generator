@@ -1,6 +1,8 @@
-#include <iostream>
+// File: main.cpp
+extern int foo();  // Declaration
 
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    int result = foo();  // No definition for 'foo' will cause a linker error
     return 0;
 }
+

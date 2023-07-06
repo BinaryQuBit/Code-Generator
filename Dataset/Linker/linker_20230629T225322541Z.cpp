@@ -1,7 +1,13 @@
+// main.cpp
 #include <iostream>
 
+struct alignas(16) MyStruct { // Specifying alignment requirement
+    int x;
+};
+
 int main() {
-    int x = 10;
-    double* ptr = &x;
+    MyStruct obj;
+    obj.x = 10;
+    std::cout << "x: " << obj.x << std::endl;
     return 0;
 }

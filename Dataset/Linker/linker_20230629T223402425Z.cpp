@@ -1,7 +1,7 @@
-#include <iostream>
+// File: main.cpp
+int volatile myVariable;  // Declaration without definition
 
 int main() {
-    int x;
-    std::cout << x << std::endl;
+    myVariable = 42;  // Linker error: unresolved external symbol myVariable
     return 0;
 }

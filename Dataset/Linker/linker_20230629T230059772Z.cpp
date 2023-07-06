@@ -1,6 +1,14 @@
-#include <iostream>
+class MyClass {
+public:
+    friend void friendFunction(int);
+};
+
+void friendFunction(float) {  // Incompatible type declaration
+    // Function implementation
+}
 
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    friendFunction(42);  // Calling the friend function
     return 0;
 }
+

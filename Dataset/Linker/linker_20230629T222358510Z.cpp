@@ -1,6 +1,12 @@
-#include <iostream>
+#include "AnotherExample.h"
+
+class Example {
+public:
+    AnotherExample obj; // Using incomplete type
+};
 
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    Example e;
     return 0;
 }
+

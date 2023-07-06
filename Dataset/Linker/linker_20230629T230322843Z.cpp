@@ -1,8 +1,15 @@
-#include <iostream>
+class MyClass {
+public:
+    void nonVirtualFunction(int);  // Function declaration
 
-int multiply(int a, int b);
+};
+
+void MyClass::nonVirtualFunction(float) {  // Incompatible type in implementation
+    // Function implementation
+}
 
 int main() {
-    int result = multiply(2, 3);
+    MyClass obj;
+    obj.nonVirtualFunction(42);  // Calling the non-virtual function
     return 0;
 }

@@ -1,8 +1,19 @@
+// main.cpp
 #include <iostream>
 
-void printMessage();
+template <typename T>
+class MyClass {
+public:
+    void myFunction();
+};
+
+template <typename T>
+void MyClass<T>::myFunction() {
+    std::cout << "MyClass::myFunction()" << std::endl;
+}
 
 int main() {
-    printMessage();
+    MyClass<int> obj;
+    obj.myFunction(); // Error: Undefined reference to `MyClass<int>::myFunction()`
     return 0;
 }

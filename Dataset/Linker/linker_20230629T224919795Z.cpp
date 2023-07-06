@@ -1,8 +1,9 @@
-#include <iostream>
-
-int multiply(int a, int b);
+class MyClass {
+public:
+    ~MyClass(int value) {} // Destructor with an integer argument
+};
 
 int main() {
-    int result = multiply(2, 3);
+    MyClass obj;
     return 0;
 }

@@ -1,8 +1,11 @@
-#include <iostream>
+// File 1.cpp
+template <typename T>
+void print(T value);  // Declaration of function template
 
-int main() {
-    int* arr = new int[5];
-    delete[] arr;
-    delete[] arr;
-    return 0;
+// File 2.cpp
+template <>
+void print<int>(int value)  // Specialization for int type
+{
+    // implementation
 }
+

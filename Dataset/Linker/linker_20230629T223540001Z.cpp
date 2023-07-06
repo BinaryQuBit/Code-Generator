@@ -1,12 +1,5 @@
-#include <iostream>
+// File 1.cpp
+int sharedVariable = 10;  // Definition with external linkage
 
-class MyClass {
-public:
-    void displayMessage();
-};
-
-int main() {
-    MyClass obj;
-    obj.displayMessage();
-    return 0;
-}
+// File 2.cpp
+extern int sharedVariable;  // Declaration with default external linkage

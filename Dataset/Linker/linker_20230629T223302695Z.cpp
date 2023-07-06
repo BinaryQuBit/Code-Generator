@@ -1,6 +1,8 @@
-#include <iostream>
+// File: main.cpp
+extern int myVariable;  // Declaration without definition
 
 int main() {
-    std::cout << "Hello, world!" << std::endl;
+    myVariable = 42;  // Linker error: unresolved external symbol myVariable
     return 0;
 }
+

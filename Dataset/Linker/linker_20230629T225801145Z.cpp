@@ -1,7 +1,16 @@
-#include <iostream>
+// File.cpp
+template <typename T>
+struct MyClass {
+    static void myFunction();
+};
+
+template <typename T>
+void MyClass<T>::myFunction() {}
+
+template <>
+void MyClass<int>::myFunction() {}
 
 int main() {
-    int x = 10;
-    double* ptr = &x;
+    MyClass<int>::myFunction();
     return 0;
 }

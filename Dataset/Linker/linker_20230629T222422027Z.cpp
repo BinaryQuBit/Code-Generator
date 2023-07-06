@@ -1,8 +1,8 @@
-#include <iostream>
+#pragma once
 
-void displayMessage();
+class Example; // Forward declaration
 
-int main() {
-    displayMessage();
-    return 0;
-}
+class AnotherExample {
+public:
+    Example* examplePtr;
+};

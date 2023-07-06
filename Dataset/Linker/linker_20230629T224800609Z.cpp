@@ -1,7 +1,10 @@
-#include <iostream>
+class MyClass {
+public:
+    MyClass() {} // Constructor definition 1
+    MyClass() {} // Constructor definition 2
+};
 
 int main() {
-    int x;
-    std::cout << x << std::endl;
+    MyClass obj;
     return 0;
 }

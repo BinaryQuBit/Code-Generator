@@ -1,8 +1,10 @@
-#include <iostream>
+// File.cpp
+template <typename T>
+struct MyClass {
+    static void myFunction();
+};
 
 int main() {
-    int* ptr = new int;
-    delete ptr;
-    delete ptr;
+    MyClass<int>::myFunction();
     return 0;
 }

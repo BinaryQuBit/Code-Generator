@@ -1,12 +1,10 @@
-#include <iostream>
+class MyFriendClass;
 
 class MyClass {
-public:
-    void displayMessage();
+  friend class MyFriendClass;
 };
 
 int main() {
-    MyClass obj;
-    obj.displayMessage();
-    return 0;
+  MyFriendClass obj;
+  return 0;
 }

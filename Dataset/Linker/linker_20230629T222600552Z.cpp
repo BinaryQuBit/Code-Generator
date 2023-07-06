@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
-    std::cout << x << std::endl;
-    return 0;
+template <typename T>
+void printValue(T value) { // Definition of template function
+    std::cout << value << std::endl;
 }

@@ -1,12 +1,5 @@
 #include <iostream>
 
-class MyClass {
-public:
-    void displayMessage();
-};
-
-int main() {
-    MyClass obj;
-    obj.displayMessage();
-    return 0;
+inline int add(int a, int b) { // Definition of inline function
+    return a + b;
 }

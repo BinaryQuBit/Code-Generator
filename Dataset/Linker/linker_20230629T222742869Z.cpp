@@ -1,8 +1,17 @@
 #include <iostream>
 
-extern int x;
+template <typename T>
+class Example { // Definition of template class
+public:
+    T value;
+};
+
+template <typename T>
+class Example; // Another definition of template class
 
 int main() {
-    std::cout << x << std::endl;
+    Example<int> ex;
+    ex.value = 5;
+    std::cout << ex.value << std::endl;
     return 0;
 }
