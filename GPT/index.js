@@ -4,8 +4,8 @@ import { Configuration, OpenAIApi } from 'openai';
 // Api token and organization
 async function runChatBot() {
   const configuration = new Configuration({
-    organization: '', // Your Organization ID here
-    apiKey: '', // Your API Key here
+    organization: 'org-4pUdNyg1GLL3kUGKSh202n5S', // Your Organization ID here
+    apiKey: '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', // Your API Key here
   });
 
   const openai = new OpenAIApi(configuration);
@@ -16,7 +16,7 @@ async function runChatBot() {
       const messages = JSON.parse(messagesData);
 
       const completion = await openai.createChatCompletion({
-        model: 'gpt-3.5-turbo', // Your Model here
+        model: 'gpt-3.5-turbo-16k-0613', // Your Model here
         messages: messages,
       });
 
@@ -66,7 +66,7 @@ async function runChatBot() {
   }
 
 // Iterations
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < 1; i++) {
     await saveToFile();
     await delay(5000); // Delay of 5 seconds
   }
