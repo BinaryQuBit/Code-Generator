@@ -4,8 +4,8 @@ import { Configuration, OpenAIApi } from 'openai';
 // Api token and organization
 async function runChatBot() {
   const configuration = new Configuration({
-    organization: 'org-4pUdNyg1GLL3kUGKSh202n5S', // Your Organization ID here
-    apiKey: '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', // Your API Key here
+    organization: '', // Your Organization ID here
+    apiKey: '', // Your API Key here
   });
 
   const openai = new OpenAIApi(configuration);
