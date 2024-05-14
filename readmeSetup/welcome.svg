@@ -99,10 +99,10 @@
       </h1>
       <section class='items'>
         <ul>
-          <li>An application to create, assign and claim tasks</li>
+          <li>A script to generate faulty codes to train AI Model</li>
         </ul>
         <ul>
-          <li>between team members</li>
+          <li>using another AI Model, ChatGPT</li>
         </ul>
       </section>
     </div>
