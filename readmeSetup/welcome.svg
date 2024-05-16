@@ -79,15 +79,12 @@
           flex-direction: column;
         }
 
-        ul {
+        .items p {
           font-size: 14px;
           line-height: 26px;
           color: #9e3ffd;
           font-weight: 700;
           font-family: "Open Sans", sans-serif;
-        }
-
-        ul li {
           display: flex;
           letter-spacing: 0.125vw;
         }
@@ -98,12 +95,8 @@
         <span><em>code generator</em></span>
       </h1>
       <section class='items'>
-        <ul>
-          <li>A script to generate faulty codes to train AI Model</li>
-        </ul>
-        <ul>
-          <li>using another AI Model, ChatGPT</li>
-        </ul>
+        <p>A script to generate faulty codes to train AI Model</p>
+        <p>using another AI Model, ChatGPT</p>
       </section>
     </div>
   </foreignObject>
